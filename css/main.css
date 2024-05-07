@@ -1,0 +1,235 @@
+body {
+    background-image: url('../img/large-triangles.svg');
+
+}
+
+/* CONFIGURACION PRIMER SECCION */
+.img1 {
+    text-align: left;
+}
+
+.img2 {
+    text-align: right;
+    margin-top: -90px;
+    text-decoration: none;
+}
+
+.logointecap {
+    width: 200px;
+    height: 100px;
+}
+
+
+
+
+.logoface {
+    width: 100px;
+    margin-right: 5px;
+
+}
+
+.logotwitter {
+    width: 100px;
+    height: 100px;
+    margin-right: 5px;
+}
+
+.logoinsta {
+    width: 100px;
+    height: 100px;
+    margin-right: 8px;
+
+}
+
+.logoyutu {
+    width: 100px;
+    height: 100px;
+    margin-right: 5px;
+
+}
+
+.logolinkedin {
+    width: 100px;
+    height: 100px;
+}
+
+/* CONFIGURACION DEL MENU RESPONSIVO*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: gray;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+.menuLogo {
+    width: 20%;
+    float: right;
+}
+
+/* INFORMACION ADICIONAL */
+#seccion3{
+    display: grid;
+    grid-template-areas: "mision imagen vision";
+}
+
+.sectionmision{
+    grid-area: mision;
+    background-color: white;
+    margin: auto;
+    width: 70%;
+    border: 2px solid #000;
+    font-size: 15px;
+}
+
+.mapa{
+    grid-area: imagen;
+    height: 250px;
+}
+
+iframe {
+    height: 250px;
+    
+}
+
+.sectionvision{
+    grid-area: vision;
+    background-color: white;
+    margin: auto;
+    width: 70%;
+    border: 2px solid #000;
+    font-size: 15px;
+}
+
+
+
+
+/* ULTIMA SECCION */
+#informacionAdicional {
+    display: grid;
+    grid-template-areas: "texto imagen";
+}
+
+.articulo4{
+    grid-area: texto;
+    background-color: white;
+    margin: auto;
+    width: 85%;
+    border: 2px solid #000;
+    font-size: 15px;
+    margin-left: 100px;
+}
+
+.articulo5{
+    width: 250px;
+    border: 0px;
+    border-spacing: 0px;
+    margin: auto;
+}
+
+.logointecap2{
+    width: 95%;
+    height: 250px;
+    margin-bottom: -3px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: white;
+
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: gray;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        height: 400px;
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: #ecececec;
+    }
+
+    /* PRIMER SECCION */
+    .img1{
+        text-align: center;
+    }
+
+    .img2{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #seccion3{
+        grid-template-areas: "mision" "imagen" "vision";
+        row-gap: 50px;
+    }
+
+
+    #informacionAdicional {
+        grid-template-areas: "texto" "imagen";
+        row-gap: 50px;
+    
+    }
+
+
+}

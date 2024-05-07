@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#encabezado{
+    background-color: white;
+    height: 100px;
+}
+
+/* CONFIGURACION DEL MENU RESPONSIVO*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #77021a;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+.menuLogo {
+    width: 25%;
+    float: right;
+}
+
+/* CONFIGURACION DE TEXTO E IMAGENES */
+
+#redesSociales {
+    float: right;
+}
+
+#titulo1 {
+    color: #EF0A3E;
+    padding: 30px 0px 0px 70px;
+}
+
+.logoface {
+    width: 100px;
+}
+
+.logotwitter {
+    width: 100px;
+    height: 100px;
+}
+
+.logoinsta {
+    width: 100px;
+    height: 100px;
+}
+
+#seccion1 {
+    text-align: right
+}
+
+#seccion2 {
+    color: black;
+    margin-top: -60px;
+    margin-left: 70px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+/* EMPIEZAN PROFESORADOS */
+#seccion3 {
+    display: grid;
+    grid-template-areas: "prof1 prof2";
+
+}
+
+
+td{
+    border: none;
+}
+.configBoton1{
+    border-radius: 10px 10px 10px 10px;
+    background-color: #77021a;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    color: white;
+}
+
+/* TABLA 2 */
+#tabla2 {
+    grid-area: prof1;
+    border-collapse: collapse;
+    margin: auto;
+    width: 70%;
+
+}
+
+.celda3 {
+    width: 250px;
+    border: 0px;
+    border-spacing: 0px;
+}
+
+.celda4 {
+    width: 300px;
+    text-align: justify;
+}
+
+.imagencompu {
+
+    width: 95%;
+    height: 250px;
+    margin-bottom: -3px;
+   
+}
+
+/* TABLA 3 */
+#tabla3 {
+    grid-area: prof2;
+    border-collapse: collapse;
+    margin: auto;
+    width: 70%;
+
+}
+.celda5 {
+    width: 250px;
+    border: 0px;
+  border-spacing: 0px;
+}
+
+.celda6{
+    width: 300px;
+    text-align: justify;
+}
+
+.imagenmate {
+
+    width: 95%;
+    height: 250px;
+    margin-bottom: -3px;
+   
+}
+
+/* */
+#seccion4 {
+    color: black;
+    margin-top: -60px;
+    margin-left: 70px;
+}
+
+/* LICENCIATURAS*/
+
+#seccion5 {
+    display: grid;
+    grid-template-areas: "lic1 lic2";
+}
+
+/* TABLA 4 */
+
+#tabla4{
+    grid-area: lic1;
+    border-collapse: collapse;
+    margin: auto;
+    width: 70%;
+}
+
+.celda7 {
+    width: 250px;
+    border: 0px;
+  border-spacing: 0px;
+}
+
+.celda8{
+    width: 300px;
+    text-align: justify;
+}
+
+.imagencompu2 {
+
+    width: 95%;
+    height: 250px;
+    margin-bottom: -3px;   
+}
+
+/* TABLA 5 */
+#tabla5{
+    grid-area: lic2;
+    border-collapse: collapse;
+    margin: auto;
+    width: 70%;
+}
+
+.celda9 {
+    width: 250px;
+    border: 0px;
+  border-spacing: 0px;
+}
+
+.celda10{
+    width: 300px;
+    text-align: justify;
+}
+
+.imagenmate2 {
+
+    width: 95%;
+    height: 250px;
+    margin-bottom: -3px;
+   
+}
+/* */
+#seccion6 {
+    color: black;
+    margin-top: -60px;
+    margin-left: 70px;
+}
+
+/* MAESTRIAS */
+#seccion7 {
+    display: grid;
+    grid-template-areas: "msc1 msc2";
+}
+
+
+
+/*TABLA 6 */
+#tabla6{
+    grid-area: msc1;
+    border-collapse: collapse;
+    margin: auto;
+    width: 70%;
+}
+
+.celda11 {
+    width: 250px;
+    border: 0px;
+  border-spacing: 0px;
+}
+
+.celda12{
+    width: 300px;
+    text-align: justify;
+}
+
+.imagencompu3 {
+
+    width: 95%;
+    height: 250px;
+    margin-bottom: -3px;   
+}
+
+/* TABLA 7*/
+#tabla7{
+    grid-area: msc2;
+    border-collapse: collapse;
+    margin: auto;
+    width: 70%;
+}
+
+.celda13 {
+    width: 250px;
+    border: 0px;
+  border-spacing: 0px;
+}
+
+.celda14{
+    width: 300px;
+    text-align: justify;
+}
+
+.imagenmate3 {
+
+    width: 95%;
+    height: 250px;
+    margin-bottom: -3px;   
+}
+
+
+
+
+footer {
+    background-color: #75001b;
+    color: white;
+    text-align: center;
+}
+@media screen and (max-width: 800px) {
+
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: white;
+
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #75001b;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: #ecececec;
+    }
+
+    #seccion1 {
+        text-align: center;
+    }
+
+    #seccion2 {
+        text-align: center;
+        margin-top: 30px;
+        color: black;
+        margin-left: -10px;
+    }
+
+    #seccion3 {
+        grid-template-areas: "prof1" "prof2";
+        row-gap: 50px;
+    }
+
+    #seccion4{
+        text-align: center;
+    }
+
+    #seccion5{
+        grid-template-areas: "lic1" "lic2";
+        row-gap: 50px;
+
+    }
+
+    #seccion6{
+        text-align: center;
+    }
+
+    #seccion7{
+        grid-template-areas: "msc1" "msc2";
+        row-gap: 50px;
+
+    }
+
+
+
+
+}
+
